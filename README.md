@@ -1,7 +1,7 @@
 ## IRD
 
 
-This theme is a fork of Metropolis.
+This theme is a fork of Metropolis to fit in with IRD's visual identity. 
 
 
 **IMPORTANT NOTICES FOR VERSION 1.0**
