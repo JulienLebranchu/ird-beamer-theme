@@ -1,4 +1,7 @@
-## Metropolis
+## IRD
+
+
+This theme is a fork of Metropolis.
 
 
 **IMPORTANT NOTICES FOR VERSION 1.0**
