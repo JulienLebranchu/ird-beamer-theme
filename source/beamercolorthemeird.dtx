@@ -205,23 +205,23 @@
 \newcommand{\ird@block@fill}{
   \setbeamercolor{block title}{%
     use=normal text,
-    fg=normal text.fg,
-    bg=normal text.bg!80!fg
+    fg=normal text.bg,
+    bg=normal text.fg
   }
   \setbeamercolor{block body}{
     use={block title, normal text},
-    bg=block title.bg!50!normal text.bg
+    bg=block title.bg!20!normal text.bg
   }
-}
-\setbeamercolor{block title alerted}{%
-    use={block title, alerted text},
-    bg=block title.bg,
-    fg=alerted text.fg
-}
-\setbeamercolor{block title example}{%
+  \setbeamercolor{block title alerted}{%
+  use={block title, alerted text},
+  bg=alerted text.fg,
+  fg=alerted text.bg
+  }
+  \setbeamercolor{block title example}{%
     use={block title, example text},
-    bg=block title.bg,
-    fg=example text.fg
+    bg=example text.fg,
+    fg=example text.bg
+}
 }
 \setbeamercolor{block body alerted}{use=block body, parent=block body}
 \setbeamercolor{block body example}{use=block body, parent=block body}
