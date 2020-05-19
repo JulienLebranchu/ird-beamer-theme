@@ -39,6 +39,7 @@
 %    \begin{macrocode}
 \RequirePackage{etoolbox}
 \RequirePackage{pgfopts}
+\RequirePackage{eso-pic}
 %    \end{macrocode}
 %
 %
@@ -189,6 +190,24 @@
   }
   \begin{frame}[standout]{#1}
     \ird@plaintitleformat{#2}
+  \end{frame}
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\makethanks}
+%   Creates a thanks frame.
+%    \begin{macrocode}
+\newcommand{\makethanks}[2][]{%
+\setbeamercolor{background canvas}{
+  use=palette primary,
+  bg=white,
+  fg=palette primary.bg
+}
+\usebeamercolor[bg]{palette primary}
+  \begin{frame}[plain]{#1}
+    \AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{thanks-background.pdf}}
+    \parbox{.5\textwidth}{\Huge #2}
   \end{frame}
 }
 %    \end{macrocode}
