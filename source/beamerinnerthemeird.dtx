@@ -112,7 +112,7 @@
     \vfill%
     \ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
     \ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
-    \usebeamertemplate*{title separator}
+    %\usebeamertemplate*{title separator}
 %    \end{macrocode}
 %
 % Beamer's definition of |\insertauthor| is always nonempty, so we have
@@ -154,6 +154,7 @@
 }
 \def\titlepage{%
   \usebeamertemplate{title page}
+  \AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{background.pdf}}
 }
 %    \end{macrocode}
 % \end{macro}
