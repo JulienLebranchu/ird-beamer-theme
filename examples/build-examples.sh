@@ -6,12 +6,9 @@ echo "# Building examples"
 echo "##"
 echo ""
 
-echo "- presentation-latex"
-cd "presentation-latex"
-xelatex -shell-escape presentation.tex
-xelatex -shell-escape presentation.tex
-xelatex -shell-escape presentation.tex
-# pdftoppm -r 150 -png "presentation.pdf" > "presentation.png"
+echo "- demo"
+cd "demo"
+xelatex -shell-escape demo.tex
 cd ".."
 
 echo "- pandoc-beamer"

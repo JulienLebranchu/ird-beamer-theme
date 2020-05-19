@@ -7,6 +7,9 @@ keywords: [Markdown, Example]
 lang: "en"
 theme: ird
 classoption: "aspectratio=169"
+header-includes:
+	- \titlegraphic{\hspace{0.7\textwidth}\includegraphics[height=1cm]{partners.png}}
+	- \titlegraphictwo{}
 ---	
 
 # Test
