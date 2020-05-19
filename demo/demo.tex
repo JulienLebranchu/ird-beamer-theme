@@ -1,6 +1,9 @@
-\documentclass[10pt]{beamer}
+\documentclass[10pt, aspectratio=169]{beamer}
 
-\usetheme{metropolis}
+\usetheme{ird}
+\usepackage[T1]{fontenc}
+\usepackage{accanthis}
+
 \usepackage{appendixnumberbeamer}
 
 \usepackage{booktabs}
@@ -9,14 +12,15 @@
 \usepackage{pgfplots}
 \usepgfplotslibrary{dateplot}
 
+\usepackage{multicol}
 \usepackage{xspace}
-\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\newcommand{\themename}{\textbf{\textsc{IRD}}\xspace}
 
-\title{Metropolis}
-\subtitle{A modern beamer theme}
+\title{IRD beamer theme}
+\subtitle{A modern beamer theme adapted from Metropolis}
 \date{\today}
-\author{Matthias Vogelgesang}
-\institute{Center for modern beamer themes}
+\author{Julien Lebranchu}
+\institute{ird/UMR 248 MARBEC/IRD}
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
 
 \begin{document}
@@ -30,9 +34,9 @@
 
 \section{Introduction}
 
-\begin{frame}[fragile]{Metropolis}
+\begin{frame}[fragile]{IRD}
 
-  The \themename theme is a Beamer theme with minimal visual noise
+  The \themename theme is a Beamer theme adapted from Metropolis which is a theme with minimal visual noise
   inspired by the \href{https://github.com/hsrmbeamertheme/hsrmbeamertheme}{\textsc{hsrm} Beamer
   Theme} by Benjamin Weiss.
 
@@ -233,6 +237,98 @@ or show \textbf{bold} results.\end{verbatim}
 
   \end{columns}
 \end{frame}
+\begin{frame}{Colors 1/2}									
+  \begin{multicols}{2}
+
+      \setbeamercolor{irdRedDemo}{fg=irdRedIRD,bg=white}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdRedDemo}
+          \texttt{irdRedIRD}
+      \end{beamercolorbox}
+      \setbeamercolor{irdRedDarkDemo}{fg=irdRedDark,bg=white}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdRedDarkDemo}
+          \texttt{irdRedDark}
+      \end{beamercolorbox}
+      \setbeamercolor{irdBlueIRDDemo}{fg=irdBlueIRD,bg=white}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDDemo}
+          \texttt{irdBlueIRD}
+      \end{beamercolorbox}
+      \setbeamercolor{irdBlueDarkDemo}{fg=irdBlueDark,bg=white}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueDarkDemo}
+          \texttt{irdBlueDark}
+      \end{beamercolorbox}
+      \setbeamercolor{irdBlueLightDemo}{fg=irdBlueLight,bg=white}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueLightDemo}
+          \texttt{irdBlueLight}
+      \end{beamercolorbox}
+
+      \setbeamercolor{irdRedDemoBg}{fg=white,bg=irdRedIRD}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{irdRedDemoBg}
+          \texttt{irdRedIRD}
+      \end{beamercolorbox}
+      \setbeamercolor{irdRedDarkDemoBg}{fg=white,bg=irdRedDark}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{irdRedDarkDemoBg}
+          \texttt{irdRedDark}
+      \end{beamercolorbox}
+      \setbeamercolor{irdBlueIRDDemo}{fg=white,bg=irdBlueIRD}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{irdBlueIRDDemo}
+          \texttt{irdBlueIRD}
+      \end{beamercolorbox}
+      \setbeamercolor{irdBlueDarkDemo}{fg=white,bg=irdBlueDark}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{irdBlueDarkDemo}
+          \texttt{irdBlueDark}
+      \end{beamercolorbox}
+      \setbeamercolor{irdBlueLightDemo}{fg=white,bg=irdBlueLight}
+      \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{irdBlueLightDemo}
+          \texttt{irdBlueLight}
+      \end{beamercolorbox}
+  \end{multicols}
+\end{frame}
+\begin{frame}{Colors 2/2}									
+  \begin{multicols}{2}
+
+        \setbeamercolor{irdBlueIRDAcc1Demo}{fg=irdBlueIRDAcc1,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc1Demo}
+            \texttt{irdBlueIRDAcc1}
+        \end{beamercolorbox}
+        \setbeamercolor{irdBlueIRDAcc2Demo}{fg=irdBlueIRDAcc2,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc2Demo}
+            \texttt{irdBlueIRDAcc2}
+        \end{beamercolorbox}
+        \setbeamercolor{irdBlueIRDAcc3Demo}{fg=irdBlueIRDAcc3,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc3Demo}
+            \texttt{irdBlueIRDAcc3}
+        \end{beamercolorbox}
+        \setbeamercolor{irdBlueIRDAcc4Demo}{fg=irdBlueIRDAcc4,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc4Demo}
+            \texttt{irdBlueIRDAcc4}
+        \end{beamercolorbox}
+        \setbeamercolor{irdBlueIRDAcc5Demo}{fg=irdBlueIRDAcc5,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc5Demo}
+            \texttt{irdBlueIRDAcc5}
+        \end{beamercolorbox}
+
+        \setbeamercolor{irdBlueIRDAcc1DemoBg}{bg=irdBlueIRDAcc1,fg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc1DemoBg}
+            \texttt{irdBlueIRDAcc1}
+        \end{beamercolorbox}
+        \setbeamercolor{irdBlueIRDAcc2DemoBg}{bg=irdBlueIRDAcc2,fg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc2DemoBg}
+            \texttt{irdBlueIRDAcc2}
+        \end{beamercolorbox}
+        \setbeamercolor{irdBlueIRDAcc3DemoBg}{bg=irdBlueIRDAcc3,fg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc3DemoBg}
+            \texttt{irdBlueIRDAcc3}
+        \end{beamercolorbox}
+        \setbeamercolor{irdBlueIRDAcc4DemoBg}{bg=irdBlueIRDAcc4,fg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc4DemoBg}
+            \texttt{irdBlueIRDAcc4}
+        \end{beamercolorbox}
+        \setbeamercolor{irdBlueIRDAcc5DemoBg}{bg=irdBlueIRDAcc5, fg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{irdBlueIRDAcc5DemoBg}
+            \texttt{irdBlueIRDAcc5}
+        \end{beamercolorbox}
+  \end{multicols}
+\end{frame}
 \begin{frame}{Math}
   \begin{equation*}
     e = \lim_{n\to \infty} \left(1 + \frac{1}{n}\right)^n
@@ -313,6 +409,8 @@ or show \textbf{bold} results.\end{verbatim}
   Questions?
 \end{frame}
 
+\makethanks{Test}
+
 \appendix
 
 \begin{frame}[fragile]{Backup slides}
@@ -332,5 +430,7 @@ or show \textbf{bold} results.\end{verbatim}
   \bibliographystyle{abbrv}
 
 \end{frame}
+
+
 
 \end{document}

@@ -2,6 +2,7 @@ MAKEFLAGS  := -j 1
 INS         = source/beamerthemeird.ins
 PACKAGE_SRC = $(wildcard source/*.dtx)
 PACKAGE_STY = $(notdir $(PACKAGE_SRC:%.dtx=%.sty))
+BG_PDF		= $(wildcard source/*.pdf)
 DEMO_SRC    = demo/demo.tex demo/demo.bib
 DEMO_PDF    = demo/demo.pdf
 DOC_SRC     = doc/metropolistheme.dtx
@@ -9,9 +10,9 @@ DOC_PDF     = doc/metropolistheme.pdf
 
 CTAN_CONTENT = README.md $(INS) $(PACKAGE_SRC) $(DOC_SRC) $(DOC_PDF) $(DEMO_SRC) $(DEMO_PDF)
 
-DESTDIR     ?= $(shell kpsewhich -var-value=TEXMFHOME)
-INSTALL_DIR  = $(DESTDIR)/tex/latex/ird
-DOC_DIR      = $(DESTDIR)/doc/latex/ird
+DESTDIR     ?= ~/.texmf
+INSTALL_DIR  = $(DESTDIR)/tex/latex/beamer/ird
+DOC_DIR      = $(DESTDIR)/doc/latex/beamer/ird
 CACHE_DIR   := $(shell pwd)/.latex-cache
 
 COMPILE_TEX := latexmk -xelatex -output-directory=$(CACHE_DIR)
@@ -32,14 +33,16 @@ demo: $(DEMO_PDF)
 
 clean: clean-cache clean-sty
 
-install: $(PACKAGE_STY) $(DOC_PDF)
+install: $(PACKAGE_STY)
 	@mkdir -p $(INSTALL_DIR)
 	@cp $(PACKAGE_STY) $(INSTALL_DIR)
+	@cp $(BG_PDF) $(INSTALL_DIR)
 	@mkdir -p $(DOC_DIR)
 	@cp $(DOC_PDF) $(DOC_DIR)
 
 uninstall:
 	@rm -f "$(addprefix $(INSTALL_DIR)/, $(PACKAGE_STY))"
+	@rm -f "$(addprefix $(INSTALL_DIR)/, $(BG_PDF))"
 	@rmdir "$(INSTALL_DIR)"
 	@rm -f "$(DOC_DIR)/$(notdir $(DOC_PDF))"
 	@rmdir "$(DOC_DIR)"

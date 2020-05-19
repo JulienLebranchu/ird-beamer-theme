@@ -33,6 +33,7 @@
 % \subsubsection{Package dependencies}
 %    \begin{macrocode}
 \RequirePackage{pgfopts}
+\RequirePackage{xcolor}
 %    \end{macrocode}
 %
 %
@@ -82,10 +83,17 @@
 % \subsubsection{Base colors}
 %
 %    \begin{macrocode}
-\definecolor{mDarkBrown}{HTML}{604c38}
-\definecolor{mDarkTeal}{HTML}{23373b}
-\definecolor{mLightBrown}{HTML}{EB811B}
-\definecolor{mLightGreen}{HTML}{14B03D}
+\definecolor{irdRedIRD}{RGB}{227,6,19}
+\definecolor{irdBlueIRD}{RGB}{15,112,183}
+\definecolor{irdRedDark}{RGB}{139,0,0}
+\definecolor{irdBlueDark}{RGB}{0,86,164}
+\definecolor{irdBlueLight}{RGB}{0,159,227}
+
+\definecolor{irdBlueIRDAcc1}{RGB}{118,175,236}
+\definecolor{irdBlueIRDAcc2}{RGB}{77,151,230}
+\definecolor{irdBlueIRDAcc3}{RGB}{49,134,227}
+\definecolor{irdBlueIRDAcc4}{RGB}{30,119,215}
+\definecolor{irdBlueIRDAcc5}{RGB}{26,104,188}
 %    \end{macrocode}
 %
 %
@@ -99,21 +107,21 @@
 \newcommand{\ird@colors@dark}{
   \setbeamercolor{normal text}{%
     fg=black!2,
-    bg=mDarkTeal
+    bg=irdBlueDark
   }
   \usebeamercolor[fg]{normal text}
 }
 \newcommand{\ird@colors@light}{
   \setbeamercolor{normal text}{%
-    fg=mDarkTeal,
+    fg=irdBlueDark,
     bg=black!2
   }
 }
 \setbeamercolor{alerted text}{%
-  fg=mLightBrown
+  fg=irdRedIRD
 }
 \setbeamercolor{example text}{%
-  fg=mLightGreen
+  fg=irdBlueLight
 }
 %    \end{macrocode}
 %
