@@ -3,14 +3,14 @@ INS         = source/beamerthemeird.ins
 PACKAGE_SRC = $(wildcard source/*.dtx)
 PACKAGE_STY = $(notdir $(PACKAGE_SRC:%.dtx=%.sty))
 BG_PDF		= $(wildcard source/*.pdf)
-DEMO_SRC    = demo/demo.tex demo/demo.bib
-DEMO_PDF    = demo/demo.pdf
-DOC_SRC     = doc/metropolistheme.dtx
-DOC_PDF     = doc/metropolistheme.pdf
+DEMO_SRC    = examples/demo/demo.tex
+DEMO_PDF    = examples/demo/demo.pdf
+DOC_SRC     = doc/irdtheme.dtx
+DOC_PDF     = doc/irdtheme.pdf
 
 CTAN_CONTENT = README.md $(INS) $(PACKAGE_SRC) $(DOC_SRC) $(DOC_PDF) $(DEMO_SRC) $(DEMO_PDF)
 
-DESTDIR     ?= ~/.texmf
+DESTDIR     ?= ~/texmf
 INSTALL_DIR  = $(DESTDIR)/tex/latex/beamer/ird
 DOC_DIR      = $(DESTDIR)/doc/latex/beamer/ird
 CACHE_DIR   := $(shell pwd)/.latex-cache

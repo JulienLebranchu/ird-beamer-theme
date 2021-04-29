@@ -17,12 +17,12 @@ unzip Fira_Mono_3_2.zip
 sudo mkdir -p /usr/share/fonts/truetype/FiraSans
 sudo mkdir -p /usr/share/fonts/opentype/FiraSans
 
-cp Download_Folder_FiraSans_4301/Fonts/Fira_Sans_TTF_4301/*/*/*.ttf \
+sudo cp Download_Folder_FiraSans_4301/Fonts/Fira_Sans_TTF_4301/*/*/*.ttf \
 	/usr/share/fonts/truetype/FiraSans/
-cp Download_Folder_FiraSans_4301/Fonts/Fira_Sans_OTF_4301/*/*/*.otf \
+sudo cp Download_Folder_FiraSans_4301/Fonts/Fira_Sans_OTF_4301/*/*/*.otf \
 	/usr/share/fonts/opentype/FiraSans/
-cp Fira_Mono_3_2/Fonts/FiraMono_WEB_32/*.ttf /usr/share/fonts/truetype/FiraSans
-cp Fira_Mono_3_2/Fonts/FiraMono_OTF_32/*.otf /usr/share/fonts/truetype/FiraSans
+sudo cp Fira_Mono_3_2/Fonts/FiraMono_WEB_32/*.ttf /usr/share/fonts/truetype/FiraSans
+sudo cp Fira_Mono_3_2/Fonts/FiraMono_OTF_32/*.otf /usr/share/fonts/truetype/FiraSans
 
 rm Download_Folder_FiraSans_4301.zip Fira_Mono_3_2.zip
 rm -rf Download_Folder_FiraSans_4301 Fira_Mono_3_2
